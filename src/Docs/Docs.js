@@ -8,7 +8,7 @@ const Docs = () => {
     return (
         <>
             <Header />
-            <div class="docs-wrapper">
+            <div className="docs-wrapper">
                 <Sidebar />
                 <Content />
             </div>
