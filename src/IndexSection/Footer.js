@@ -15,8 +15,8 @@ const Footer = () => {
                     </ul>
 
                     <small className="copyright">Designed with <span className="sr-only">love</span><i className="fas fa-heart"
-                        style={{color: "#fb866a"}}></i> by <a className="theme-link" href="http://themes.3rdwavemedia.com"
-                            target="_blank">Xiaoying Riley</a> for developers</small>
+                        style={{color: "#fb866a"}}></i> by <a className="theme-link" href="http://rohitashsingh.vercel.app"
+                            target="_blank">Rohitash Singh</a></small>
                 </div>
             </footer>
         </>

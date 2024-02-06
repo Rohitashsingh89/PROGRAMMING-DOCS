@@ -1,7 +1,13 @@
 import React, { useEffect } from 'react';
+import { useState } from 'react';
 import logo from './../assets/images/coderdocs-logo.svg'
 
 const Header = () => {
+    const [theme, setTheme] = useState(false);
+
+    const handleThemeChange = () => {
+        setTheme(!theme)
+    }
 
     useEffect(() => {
 
@@ -71,15 +77,14 @@ const Header = () => {
                                 </form>
                             </div>
 
-                            <ul className="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex">
+                            <ul className="social-lis list-inline mx-md-3 mx-lg-3 mb-0 d-none d-lg-flex"  style={{ fontSize: "17px" }}>
+                                <li className="list-inline-item"><a href="#">Blog</a></li>
+                                <li className="list-inline-item"><a href="#">Community</a></li>
                                 <li className="list-inline-item"><a href="#"><i className="fab fa-github fa-fw"></i></a></li>
-                                <li className="list-inline-item"><a href="#"><i className="fab fa-twitter fa-fw"></i></a></li>
-                                <li className="list-inline-item"><a href="#"><i className="fab fa-slack fa-fw"></i></a></li>
-                                <li className="list-inline-item"><a href="#"><i className="fab fa-product-hunt fa-fw"></i></a></li>
+                                <li className="list-inline-item" onClick={handleThemeChange} ><a href="#"><i className={`fas fa-${theme ? 'moon' : 'sun'} fa-fw`} ></i></a></li>
+
                             </ul>
 
-                            <a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/coderdocs-free-bootstrap-5-documentation-template-for-software-projects/"
-                                className="btn btn-primary d-none d-lg-flex">Download</a>
                         </div>
 
                     </div>
