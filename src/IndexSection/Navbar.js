@@ -19,7 +19,7 @@ const Navbar = () => {
 
                             <ul className="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex">
                                 <li className='list-inline-item text-decoration-none'>
-                                    <Link to="/docs">Docs</Link>
+                                    <Link to="/docs/section-1">Docs</Link>
                                 </li>
                                 <li className="list-inline-item"><a href="#"><i className="fab fa-github fa-fw"></i></a></li>
                                 <li className="list-inline-item"><a href="#"><i className="fab fa-twitter fa-fw"></i></a></li>
